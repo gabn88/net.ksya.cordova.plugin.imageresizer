@@ -33,8 +33,6 @@
     __block UIImage *tempImage = nil;
     PHFetchResult *savedAssets = [PHAsset fetchAssetsWithALAssetURLs:@[imageURL] options:nil];	
 
-
-    PHFetchResult *savedAssets = [PHAsset fetchAssetsWithLocalIdentifiers:@[fileName] options:nil];
     [savedAssets enumerateObjectsUsingBlock:^(PHAsset *asset, NSUInteger idx, BOOL *stop) {
         //this gets called for every asset from its localIdentifier you saved
 
